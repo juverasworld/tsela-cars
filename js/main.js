@@ -274,5 +274,28 @@ sr.reveal(`.case__data`)
 
 
 
+var clutter = "";
+
+document
+  .querySelector("#page4>h1")
+  .textContent.split("")
+  .forEach(function (dets) {
+    clutter += `<span>${dets}</span>`;
+
+    document.querySelector("#page4>h1").innerHTML = clutter;
+  });
+
+gsap.to("#page4>h1>span", {
+  scrollTrigger: {
+    trigger: `#page4>h1>span`,
+    start: `top bottom`,
+    end: `bottom top`,
+    scroller: `#main`,
+    scrub: 0.5,
+  },
+  stagger: 0.2,
+  color: `#fff`,
+});
+
 
 
