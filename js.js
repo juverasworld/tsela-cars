@@ -24,7 +24,7 @@ gsap.to("#page4>h1>span", {
     trigger: `#page4>h1>span`,
     start: `top bottom`,
     end: `bottom top`,
-    scroller: `.wrapper`,
+    scroller: `#wrapper`,
     scrub: 0.5,
   },
   stagger: 0.2,
@@ -360,9 +360,9 @@ const sr = ScrollReveal({
     // reset: true
 })
 
-sr.reveal(`.home__header, .section__title`,{delay: 600})
-sr.reveal(`.home__footer`,{delay: 700})
-sr.reveal(`.home__img`,{delay: 900, origin: 'top'})
+sr.reveal(`.h1, .p2`,{delay: 600})
+sr.reveal(`.p`,{delay: 700})
+sr.reveal(`.p1`,{delay: 900, origin: 'top'})
 
 sr.reveal(`.sponsor__img, .products__card, .footer__logo, .footer__content, .footer__copy`,{origin: 'top', interval: 100})
 sr.reveal(`.specs__data, .discount__animate`,{origin: 'left', interval: 100})
@@ -388,7 +388,7 @@ gsap.to("#page4>h1>span", {
     trigger: `#page4>h1>span`,
     start: `top bottom`,
     end: `bottom top`,
-    scroller: `#main`,
+    scroller: `#wrapper`,
     scrub: 0.5,
   },
   stagger: 0.2,
@@ -397,3 +397,114 @@ gsap.to("#page4>h1>span", {
 
 
 
+
+        
+
+
+TweenMax.to('.first', 1.5, {
+    delay: .2,
+    left: '-100%',
+    ease: Expo.easeInOut
+})
+
+TweenMax.to('.second', 1.5, {
+    delay: .4,
+    left: '-100%',
+    ease: Expo.easeInOut
+})
+
+TweenMax.to('.third', 1.5, {
+    delay: .6,
+    left: '-100%',
+    ease: Expo.easeInOut
+})
+
+TweenMax.from('.logo', 1, {
+    delay: 1,
+    opacity: 0,
+    x: -20,
+    ease: Expo.easeInOut
+})
+TweenMax.from('.menu', 1, {
+    delay: 1.2,
+    opacity: 0,
+    x: -20,
+    ease: Expo.easeInOut
+})
+
+TweenMax.from('.search', .8, {
+    delay: 1.6,
+    opacity: 0,
+    x: -20,
+    ease: Expo.easeInOut
+})
+
+TweenMax.from('.bag', 1, {
+    delay: 1.6,
+    opacity: 0,
+    x: -20,
+    ease: Expo.easeInOut
+})
+
+TweenMax.staggerFrom('.media ul li', 1, {
+    delay: 2,
+    opacity: 0,
+    x: -20,
+    ease: Power3.easeInOut
+}, 0.08)
+
+TweenMax.from('.size', 1, {
+    delay: 1.8,
+    opacity: 0,
+    x: -20,
+    ease: Expo.easeInOut
+})
+TweenMax.staggerFrom('.size ul li', .3, {
+    delay: 2,
+    opacity: 0,
+    y: 20,
+    ease: Power3.easeInOut
+}, 0.08)
+TweenMax.from('.bottom-right ul li:first-child', .5, {
+    delay: 2.4,
+    opacity: 0,
+    x: -20,
+    ease: Expo.easeInOut
+})
+TweenMax.from('.bottom-right ul li:last-child', .6, {
+    delay: 2.4,
+    opacity: 0,
+    x: -20,
+    ease: Expo.easeInOut
+})
+TweenMax.from('.bottom-img', 1, {
+    delay: 2.4,
+    opacity: 0,
+    x: -20,
+    ease: Expo.easeInOut
+})
+
+TweenMax.from('.product-title', 3, {
+    delay: 2.2,
+    opacity: 0,
+    y: 50,
+    ease: Expo.easeInOut
+})
+TweenMax.from('.product-img', 1, {
+    delay: 4.2,
+    opacity: 0,
+    y: -800,
+    ease: Expo.easeInOut
+})
+TweenMax.from('.product-desc p', 3, {
+    delay: 4.5,
+    opacity: 0,
+    y: -50,
+    ease: Expo.easeInOut
+})
+TweenMax.from('.product-desc button', 3, {
+    delay: 6,
+    opacity: 0,
+    y: -50,
+    ease: Expo.easeInOut
+})
