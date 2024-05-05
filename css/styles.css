@@ -152,7 +152,7 @@ img {
   /* height: auto; */
   top: 0;
   left: 0;
-  z-index: var(--z-fixed);
+  z-index:;
   /* border: 2px solid peachpuff; */
   background: transparent;
   color: #95c11e;
@@ -903,7 +903,7 @@ color: #95c11e;
   width: 100%;
   height: 100%;
   left: 0%;
-  z-index: 2;
+  z-index: 1;
   background: #fff;
 }
 
@@ -1173,9 +1173,13 @@ overflow: hidden;
 
 .wrapper{
   overflow-x: hidden;
-
+z-index: -1;
     
   
+}
+
+.containerr{
+  z-index: 1;
 }
 /* .wrapp{
   position: relative;
@@ -1184,6 +1188,80 @@ overflow: hidden;
     overflow: hidden;
     z-index: 1;
 } */
+
+.loading-page {
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* background: linear-gradient(to right, #000a01, #0c0c0a, #27140f); */
+/* background-color: black; */
+background-image: url("/img/tsela/1.jpg");
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  align-items: center;
+  justify-content: center;
+  color: #191654;
+  /* z-index: 99; */
+}
+
+.image{
+  display: flex;
+  white-space: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.svg {
+  height: 150px;
+  width: 150px;
+  stroke: white;
+  fill-opacity: 0;
+  stroke-width: 3px;
+  stroke-dasharray: 4500;
+  animation: draw 8s ease;
+}
+
+@keyframes draw {
+  0% {
+    stroke-dashoffset: 4500;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.name-container {
+  height: 30px;
+  overflow: hidden;
+}
+
+.logo-name {
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: 12px;
+  text-transform: uppercase;
+  margin-left: 20px;
+  font-weight: bolder;
+}
+
+@media screen and (max-width:767px) {
+  .svg {
+    height: 50px;
+    width: 50px;
+    stroke: white;
+    fill-opacity: 0;
+    stroke-width: 3px;
+    stroke-dasharray: 4500;
+    animation: draw 8s ease;
+  }
+   
+}
+
+
+
 
 
 /******** section-popular-models ********/
