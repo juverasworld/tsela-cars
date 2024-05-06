@@ -512,7 +512,9 @@ TweenMax.from('.product-desc button', 3, {
 
 gsap.fromTo(
     ".loading-page",
-    { opacity: 1 },
+    { opacity: 1,
+    // overflow: hidden,
+    },
     {
       opacity: 0,
       display: "none",

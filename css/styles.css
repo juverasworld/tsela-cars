@@ -152,7 +152,7 @@ img {
   /* height: auto; */
   top: 0;
   left: 0;
-  z-index:;
+  /* z-index:; */
   /* border: 2px solid peachpuff; */
   background: transparent;
   color: #95c11e;
@@ -717,6 +717,7 @@ color: #95c11e;
 /* For medium devices */
 @media screen and (min-width: 576px) {
   .popular__name {
+    font-size: 16px;
     /* position: absolute; */
     bottom: -5px;
   
@@ -784,6 +785,9 @@ color: #95c11e;
 	}
 
 	.popular__name {
+    font-size: 18px;
+    /* position: absolute; */
+    /* bottom: -5px; */
 		bottom: -7px;
 	}
 
@@ -1053,6 +1057,7 @@ overflow: hidden;
   height: max-content;
   cursor: pointer;
   transition: 0.5s;
+  position: relative;
 }
 
 .card h4 {
@@ -1180,6 +1185,7 @@ z-index: -1;
 
 .containerr{
   z-index: 1;
+  overflow: hidden;
 }
 /* .wrapp{
   position: relative;
@@ -1196,7 +1202,7 @@ z-index: -1;
   /* background: linear-gradient(to right, #000a01, #0c0c0a, #27140f); */
 /* background-color: black; */
 background-image: url("/img/tsela/1.jpg");
-  height: 100%;
+  height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -1204,6 +1210,7 @@ background-image: url("/img/tsela/1.jpg");
   align-items: center;
   justify-content: center;
   color: #191654;
+  overflow: hidden;
   /* z-index: 99; */
 }
 
@@ -1311,8 +1318,8 @@ background-image: url("/img/tsela/1.jpg");
 	left: -12px;
 	color: transparent;
 	line-height: .9;
-	-webkit-text-stroke: 1px #b45309;
-	font-size: 28px;
+	-webkit-text-stroke: 1px #57a9108b;
+	font-size: 24px;
 	text-transform: uppercase;
 	font-family: var(--font-monBlack);
 }
@@ -1619,12 +1626,25 @@ p {
   transform: translate(-50%,-50%);
   transition: all ease .5s;
 }
+.center14a{
+  height: 0%;
+  width: auto;
+  background-color: #0843117c;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  transition: all ease .5s;
+}
 
 
 .page14-inner:hover .center14{
   height: 100%;
 }
 
+:hover .center14a{
+  height: 100%;
+}
 
 
 
